@@ -1,0 +1,29 @@
+{
+  "name": "vu-slack-signup-api",
+  "version": "1.0.0",
+  "description": "AWS API and Lambda function to support signup form front-end",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerrenceMM2/VU-Slack-Signup-API.git"
+  },
+  "keywords": [
+    "AWS",
+    "Lambda",
+    "Nodemailer"
+  ],
+  "author": "Terrence Mahnken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TerrenceMM2/VU-Slack-Signup-API/issues"
+  },
+  "homepage": "https://github.com/TerrenceMM2/VU-Slack-Signup-API#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "googleapis": "^52.1.0",
+    "nodemailer": "^6.4.10"
+  }
+}
