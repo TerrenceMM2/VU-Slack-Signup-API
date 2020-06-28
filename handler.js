@@ -1,17 +1,6 @@
 "use strict"
 
-module.exports.test = (event, context, callback) => {
-	const response = {
-	  statusCode: 200,
-	  body: JSON.stringify({
-		message: 'Greetings from AWS Lambda.',
-	  }),
-	};
-  
-	callback(null, response);
-};
-
-module.exports.submitForm = (event, context, callback) => {
+module.exports.submitForm = async (event, context) => {
 	try {
 		// Source: https://medium.com/@nickroach_50526/sending-emails-with-node-js-using-smtp-gmail-and-oauth2-316fe9c790a1
 		const nodemailer = require("nodemailer");
@@ -29,9 +18,9 @@ module.exports.submitForm = (event, context, callback) => {
 			refresh_token: process.env.GOOGLE_OAUTH_REFRESH_TOKEN,
 		});
 
-		const accessToken = oauth2Client.getAccessToken();
+		const accessToken = await oauth2Client.getAccessToken();
 
-		const smtpTransport = nodemailer.createTransport({
+		const smtpTransport = await nodemailer.createTransport({
 			service: "gmail",
 			auth: {
 				type: "OAuth2",
@@ -54,22 +43,25 @@ module.exports.submitForm = (event, context, callback) => {
 			html: `<b>Requestor Name:</b><span> ${event.name}</span><br /><br /><b>Requestor Email:</b><span> ${event.email}</span><br /><br /><b>Requestor Message:</b><span> ${event.msg}</span>`
 		};
 		
-		smtpTransport.sendMail(mailOptions)
+		const response = await smtpTransport.sendMail(mailOptions);
 
 		smtpTransport.close();
 
-		callback(null, {
+		return {
+			response,
+			status: 200,
 			msgTitle: "Success",
 			msgBody: "Your request was successfully sent. Please allow 24-48 hours to receive an invitation to join the Slack Workspace."
-		});
+		};
 		
 	} catch (error) {
 
-		callback(null, {
+		return {
 			error,
+			status: 500,
 			msgTitle: "Error",
 			msgBody: "Whoops. It looks like there was an issue. Please try again later."
-		});
+		};
 
 	};
 };

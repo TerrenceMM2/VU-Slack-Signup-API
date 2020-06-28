@@ -16,7 +16,8 @@ AWS Lambda & API Gateway
 ### Resources
 [Deploy an Express.js app to AWS Lambda using the Serverless Framework](https://bitbucket.org/blog/deploy-an-express-js-app-to-aws-lambda-using-the-serverless-framework)  
 [Serverless AWS Node Environment Variable Example](https://github.com/serverless/examples/tree/master/aws-node-env-variables)  
-[How to Troubleshoot Serverless API's](https://www.serverless.com/blog/troubleshoot-serverless-apis/)
+[How to Test Serverless Applications](https://www.serverless.com/blog/how-test-serverless-applications/)  
+[Serverless AWS HTTP Gateway 502 Bad Gateway](https://dzone.com/articles/serverless-aws-http-gateway-502-bad-gateway)  
 
 ### Author 
 * **Terrence Mahnken** - [LinkedIn](https://www.linkedin.com/in/terrencemahnken/) | [Twitter](https://twitter.com/TerrenceMahnken) | [Personal Portfolio](https://terrence.codes)
