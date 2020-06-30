@@ -1,8 +1,14 @@
+<div>
 <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" />
 <img src="https://img.shields.io/github/last-commit/terrencemm2/VU-Slack-Signup-API?style=for-the-badge" />
+</div>
 
 # VU-Slack-Signup-API
 AWS Lambda API endpoint to support Nodemailer functionality for the Vanderbilt University Slack Signup form front-end.
+
+## Front-End
+Live Link: [vuslack.com](https://vuslack.com)  
+[Front-End GitHub Repo](https://github.com/TerrenceMM2/VU-Slack-Signup-Frontend)  
 
 ### Built With
 - [Node](https://nodejs.org/)  
