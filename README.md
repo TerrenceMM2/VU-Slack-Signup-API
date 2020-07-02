@@ -1,5 +1,5 @@
 <div>
-<img src="https://img.shields.io/website?label=AWS%20Deployment&logo=amazon-aws&style=for-the-badge&url=https://eta0k8k1pf.execute-api.us-east-2.amazonaws.com/prod/api/submit%2F" />
+<img src="https://img.shields.io/endpoint?url=https%3A%2F%2Ftm-aws-shield-yptkstblehso.runkit.sh%2F" />
 <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" />
 <img src="https://img.shields.io/github/last-commit/terrencemm2/VU-Slack-Signup-API?style=for-the-badge" />
 </div>
