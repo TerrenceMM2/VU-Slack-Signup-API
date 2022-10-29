@@ -1,5 +1,7 @@
-<img src="https://img.shields.io/endpoint?url=https%3A%2F%2Ftm-aws-shield-yptkstblehso.runkit.sh%2F" /> <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" /> <img src="https://img.shields.io/github/last-commit/terrencemm2/VU-Slack-Signup-API?style=for-the-badge" /> <img src="https://img.shields.io/static/v1?label=Closed&message=December%201%2C%202022&color=red&style=for-the-badge" />
 <img align="right" width="100" height="100" src="https://raw.githubusercontent.com/TerrenceMM2/VU-Slack-Signup-Frontend/media/logo.png" />
+<div>
+<img src="https://img.shields.io/endpoint?url=https%3A%2F%2Ftm-aws-shield-yptkstblehso.runkit.sh%2F" /> <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" /> <img src="https://img.shields.io/github/last-commit/terrencemm2/VU-Slack-Signup-API?style=for-the-badge" /> <img src="https://img.shields.io/static/v1?label=Closed&message=December%201%2C%202022&color=red&style=for-the-badge" />
+</div>
 
 # VU-Slack-Signup-API (Archived 📦)
 
